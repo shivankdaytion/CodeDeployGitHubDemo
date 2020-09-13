@@ -1,3 +1,5 @@
 #!/bin/bash
-nginx
-
+isExistApp = `pgrep nginx`
+if [[ -n  $isExistApp ]]; then
+    nginx       
+fi
